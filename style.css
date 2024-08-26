@@ -1,0 +1,145 @@
+/* styles.css */
+
+
+
+body {
+    background-color: var(--background-color);
+    color: var(--primary-color);
+    
+}
+
+.container {
+
+    margin: 0 auto;
+    width: 50%; /* Ajusta el ancho según sea necesario */
+}
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    margin: 5px;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between; /* Esto alinea los elementos horizontalmente */
+    align-items: center; /* Centra verticalmente los elementos dentro de li */
+    background-color: #f9f9f9;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #333;
+        --secondary-color: #fff;
+        --background-color: #121212;
+    }
+}
+
+/* Contenedor para los elementos de la lista */
+#myList li {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos del li */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Contenedor para los botones */
+.button-container {
+    display: flex;
+    gap: 5px; /* Espacio entre botones */
+}
+
+/* Botones de la lista */
+button {
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Estilos para el botón de eliminar */
+button.eliminar {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Estilos para el botón de editar */
+button.editar {
+    background-color: #008CBA;
+    color: white;
+}
+
+/* Contenedor para los elementos de la lista */
+#myList li {
+    display: flex;
+    justify-content: space-between; /* Distribuye los elementos del li */
+    align-items: center; /* Centra verticalmente los elementos */
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Estilos responsivos para el texto y botones */
+#myList li span {
+    flex: 1; /* El texto del ítem ocupa el espacio restante */
+    word-wrap: break-word; /* Permite que el texto se ajuste a múltiples líneas si es necesario */
+}
+
+/* Contenedor para los botones */
+.button-container {
+    display: flex;
+    gap: 5px; /* Espacio entre botones */
+}
+
+/* Botones de la lista */
+button {
+    padding: 8px 12px; /* Tamaño del botón adecuado para tocar */
+    font-size: 14px; /* Tamaño de fuente más grande para móviles */
+    border: none;
+    cursor: pointer;
+    flex-shrink: 0; /* Evita que los botones se encojan */
+}
+
+/* Estilos para el botón de eliminar */
+button.eliminar {
+    background-color: #f44336;
+    color: white;
+}
+
+/* Estilos para el botón de editar */
+button.editar {
+    background-color: #008CBA;
+    color: white;
+}
+
+/* Media query para dispositivos móviles */
+@media (max-width: 480px) {
+    #myList li {
+        flex-direction: column; /* Alinea verticalmente los elementos del li */
+        align-items: flex-start; /* Alinea el texto a la izquierda */
+        padding: 10px 5px; /* Reduce el relleno para pantallas pequeñas */
+    }
+
+    .button-container {
+        margin-top: 5px; /* Añade un pequeño margen arriba para separar los botones del texto */
+    }
+
+    button {
+        width: 100%; /* Hace que los botones ocupen todo el ancho disponible */
+        padding: 10px; /* Incrementa el área de toque para botones */
+        font-size: 16px; /* Aumenta el tamaño de la fuente para facilidad de lectura */
+        margin-bottom: 5px; /* Añade margen entre botones */
+    }
+
+    .button-container {
+        width: 100%; /* Hace que el contenedor de botones ocupe todo el ancho del li */
+        flex-direction: column; /* Alinea los botones verticalmente */
+    }
+}
