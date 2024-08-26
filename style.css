@@ -5,7 +5,7 @@
 body {
     background-color: var(--background-color);
     color: var(--primary-color);
-    
+    font-size: 50px;
 }
 
 .container {
@@ -101,7 +101,7 @@ button.editar {
 /* Botones de la lista */
 button {
     padding: 8px 12px; /* Tamaño del botón adecuado para tocar */
-    font-size: 14px; /* Tamaño de fuente más grande para móviles */
+    font-size: 33px; /* Tamaño de fuente más grande para móviles */
     border: none;
     cursor: pointer;
     flex-shrink: 0; /* Evita que los botones se encojan */
@@ -134,7 +134,7 @@ button.editar {
     button {
         width: 100%; /* Hace que los botones ocupen todo el ancho disponible */
         padding: 10px; /* Incrementa el área de toque para botones */
-        font-size: 16px; /* Aumenta el tamaño de la fuente para facilidad de lectura */
+        font-size: 33px; /* Aumenta el tamaño de la fuente para facilidad de lectura */
         margin-bottom: 5px; /* Añade margen entre botones */
     }
 
@@ -142,4 +142,11 @@ button.editar {
         width: 100%; /* Hace que el contenedor de botones ocupe todo el ancho del li */
         flex-direction: column; /* Alinea los botones verticalmente */
     }
+}
+
+
+
+
+input {
+    font-size: 33px;
 }
